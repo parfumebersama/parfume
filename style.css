@@ -21,7 +21,7 @@ body{
 }
 @font-face{
 	font-family: "CASTELAR";
-	src: url('CASTELAR.TTF') format('opentype');
+	src: url('Azonix.otf') format('opentype');
 }
 img{
 	width: 100%;
