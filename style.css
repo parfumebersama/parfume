@@ -160,7 +160,7 @@ nav ul li img{
 	    display: block;
 	    width: 28px;
 	    height: 3px;
-	    background: #fff;
+	    background: rgb(27, 85, 172);
 	    border-radius: 50px;
 	    transition: 0.3s cubic-bezier(0.57,-0.64, 0.3, 1.46);
 	}
