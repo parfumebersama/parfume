@@ -54,7 +54,7 @@ nav a{
 }
 nav .logo{
 	font-size: 1.5em;
-	font-family: "Azonix", sans-serif;
+	font-family: "CASTELAR", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	transition: 0.5s;
@@ -210,7 +210,7 @@ nav ul li img{
 
 /*=== BAGIAN JUMBTRON ===*/
 .jumbotron{
-	background: url(img/background-4.png);
+	background: url(img/background.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -347,7 +347,7 @@ nav ul li img{
 	z-index: 5;
 }
 .launching .aboutUs .row h1 span{
-	font-family: "Azonix", sans-serif;
+	font-family: "CASTELAR", sans-serif;
 }
 .launching .aboutUs .row p{
 	position: relative;
