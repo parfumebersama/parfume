@@ -223,7 +223,7 @@ nav ul li img{
 .jumbotron img.logo{
 	position: absolute;
 	max-width: 25rem;
-	-webkit-filter: drop-shadow(20px 5px 20px rgba(0,0,0,0.1));
+	-webkit-filter: drop-shadow(20px 5px 20px rgba(48, 24, 24, 0.1));
 	z-index: 1;
 }
 .jumbotron h2{
@@ -231,10 +231,10 @@ nav ul li img{
 	text-transform: uppercase;
 	font-weight: 800;
 	font-size: 9em;
-	font-family: "Azonix", sans-serif;
+	font-family: "CASTELAR", sans-serif;
 }
 .jumbotron h2.text{
-	background: -webkit-linear-gradient(90deg, rgba(3,169,250,1) 0%, rgba(135,251,203,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(29, 107, 146) 0%, rgb(42, 56, 50) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	z-index: 2;
