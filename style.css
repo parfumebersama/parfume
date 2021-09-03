@@ -662,7 +662,7 @@ nav ul li img{
 .seputar{
 	position: relative;
 	padding: 50px 0px;
-	background: url(img/background-5.png);
+	background: url(img/background-3.png);
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -702,7 +702,7 @@ nav ul li img{
 	content: '';
 	position: absolute;
 	top: -1px;
-	background: #000;
+	background: rgb(255, 255, 255);
 	width: 130px;
 	height: 15px;
 	border-radius: 10px 10px 50px 50px;
@@ -754,7 +754,7 @@ nav ul li img{
 	align-items: center;
 	font-weight: 800;
 	padding: 3px 10px;
-	background: #2617ac;
+	background: #ffffff;
 	border-radius: 5px;
 	color: #000;
 	text-shadow: 1px 1px 0px rgba(255,255,255,0.3);
