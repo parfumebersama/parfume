@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -20,8 +20,8 @@ body{
 	overflow-x: hidden;
 }
 @font-face{
-	font-family: "Luxurious Roman", cursive;
-	src: url("LuxuriousRoman-Regular.ttf") format('opentype');
+	font-family: "Azonix";
+	src: url('Azonix.otf') format('opentype');
 }
 img{
 	width: 100%;
@@ -43,22 +43,22 @@ nav{
 	/*background: #224178;*/
 }
 nav.sticky{
-	background: rgb(39, 34, 34);
+	background: #fff;
 	padding: 2px 100px;
 }
 body.dark nav.sticky{
-	background: #f5e6e6;
+	background: #1d1d1d;
 }
 nav a{
 	text-decoration: none;
 }
 nav .logo{
 	font-size: 1.5em;
-	font-family: "Luxurious Roman", cursive;
+	font-family: "Azonix", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	transition: 0.5s;
-	color: rgb(0, 0, 0);
+	color: #fff;
 }
 nav.sticky .logo{
 	background: url(img/background.png);
@@ -82,21 +82,21 @@ nav ul li{
 }
 nav ul li:hover{
 	padding: 0px 20px;
-	background: rgb(255, 255, 255);
+	background: rgba(86, 143, 219,0.5);
 }
 nav ul li a{
 	letter-spacing: 1px;
-	color: rgb(7, 255, 7);
+	color: #fff;
 	transition: 0.3s;
 	font-weight: 700;
 }
 nav.sticky ul li a{
-	color: #050202;
-	background: url(img/background.png);
+	color: #1d1d1d;
+	/*background: url(img/background.png);
 	background-size: cover;
 	background-position: center;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;*/
 }
 nav .menu{
 	display: none;
@@ -127,7 +127,7 @@ nav ul li img{
         z-index: -1;
         transform: translateX(100%);
         transition: 0.5s;
-        background: rgb(164, 185, 223);
+        background: #fff;
     }
     nav ul.slide{
         opacity: 1;
@@ -160,7 +160,7 @@ nav ul li img{
 	    display: block;
 	    width: 28px;
 	    height: 3px;
-	    background: rgb(27, 85, 172);
+	    background: #fff;
 	    border-radius: 50px;
 	    transition: 0.3s cubic-bezier(0.57,-0.64, 0.3, 1.46);
 	}
@@ -187,14 +187,14 @@ nav ul li img{
 	    transform: rotate(-45deg) translate(-1px, 0px);
 	}
 	nav.sticky .menu input:checked ~ span:nth-child(4) {
-		background: #fffdfd;
+		background: #1d1d1d;
 	}
 	.menu input:checked ~ span:nth-child(3) {
 	    opacity: 0;
 	    transform: scale(0);
 	}
 	nav.sticky .menu input:checked ~ span:nth-child(3) {
-		background: rgb(238, 217, 217);
+		background: black;
 	}
 }
 
@@ -210,11 +210,11 @@ nav ul li img{
 
 /*=== BAGIAN JUMBTRON ===*/
 .jumbotron{
-	background: url(img/background7.png);
+	background: url(img/background-5.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: a;
-	height: 900px;
+	position: relative;
+	height: 700px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -222,27 +222,26 @@ nav ul li img{
 }
 .jumbotron img.logo{
 	position: absolute;
-	max-width: 35rem;
-	-webkit-filter: drop-shadow(20px 5px 20px rgba(255, 217, 217, 0.1));
+	max-width: 25rem;
+	-webkit-filter: drop-shadow(20px 5px 20px rgba(0,0,0,0.1));
 	z-index: 1;
 }
 .jumbotron h2{
 	position: absolute;
 	text-transform: uppercase;
 	font-weight: 800;
-	font-size: 10em;
-	text-align: center;
-	font-family: "Luxurious Roman", cursive;
+	font-size: 9em;
+	font-family: "Azonix", sans-serif;
 }
 .jumbotron h2.text{
-	background: -webkit-linear-gradient(90deg, rgb(219, 195, 56) 0%, rgb(255, 0, 0) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(3,169,250,1) 0%, rgba(135,251,203,1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	z-index: 2;
 }
 .jumbotron h2.text2{
-	color: rgb(0, 0, 0);
-	transform: translate(25px, 35px);
+	color: rgba(0,0,0,0.1);
+	transform: translate(25px, 25px);
 	z-index: 1;
 }
 .jumbotron h2.other{
@@ -278,18 +277,18 @@ nav ul li img{
 /*--- RESPONSIVE ---*/
 @media screen and (max-width: 768px){
 	.jumbotron h2{
-		font-size: 9em;
+		font-size: 7em;
 	}
 	.jumbotron img.logo{
 		max-width: 17rem;
 	}
 }
-@media screen and (max-width: 620px){
+@media screen and (max-width: 576px){
 	.jumbotron h2{
-		font-size: 5em;
+		font-size: 3.5em;
 	}
 	.jumbotron .content-2{
-		position: relative;
+		position: absolute;
 		top: -100px;
 		left: -70px;
 	}
@@ -302,7 +301,7 @@ nav ul li img{
 		height: 500px;
 	}
 	.jumbotron img.logo{
-		max-width: 19rem;
+		max-width: 10rem;
 	}
 }
 
@@ -314,7 +313,7 @@ nav ul li img{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url(img/background-2.png);
+	background: url(img/background.png);
 	background-size: cover;
 }
 .launching img.patren{
@@ -348,7 +347,7 @@ nav ul li img{
 	z-index: 5;
 }
 .launching .aboutUs .row h1 span{
-	font-family: "Luxurious Roman", cursive;
+	font-family: "Azonix", sans-serif;
 }
 .launching .aboutUs .row p{
 	position: relative;
@@ -357,7 +356,7 @@ nav ul li img{
 	z-index: 5;
 }
 .launching .aboutUs .swiper-container{
-	position: relatave;
+	position: relative;
 	width: 350px;
 	height: 350px;
 }
@@ -392,9 +391,9 @@ nav ul li img{
 	font-size: 1.3em;
 }
 .launching .aboutUs .swiper-slide h2{
-	font-size: 1em;
+	font-size: 2em;
 	color: #171717;
-	font-weight: 200;
+	font-weight: 800;
 	text-align: center;
 }
 .launching .aboutUs .swiper-slide ul li{
@@ -416,7 +415,7 @@ nav ul li img{
 	justify-content: center;
 	align-items: center;
 	color: #000;
-	font-weight: 200;
+	font-weight: 800;
 }
 .launching .aboutUs .swiper-slide img.illustration{
 	width: 250px;
@@ -486,9 +485,9 @@ nav ul li img{
 		text-align: right;
 	}
 }
-@media screen and (max-width: 676px){
+@media screen and (max-width: 576px){
 	.launching{
-		padding: 50px 94px;
+		padding: 50px 0px;
 	}
 	.launching .aboutUs .row h1{
 		text-align: left;
@@ -541,7 +540,7 @@ nav ul li img{
 	width: 100%;
 }
 .launching .content-areas h1 span{
-	font-family: "Luxurious Roman", cursive;
+	font-family: "Azonix", sans-serif;
 }
 .launching .content-areas p{
 	color: #fff;
@@ -570,7 +569,7 @@ nav ul li img{
 		font-size: 1em;
 	}
 }
-@media screen and (max-width: 620px){
+@media screen and (max-width: 576px){
 	.launching .content-areas .yahalo2{
 		display: block;
 		justify-content: inherit;
@@ -593,28 +592,27 @@ nav ul li img{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 }
 .launching .product{
-	width: 60vw;
-	height: 30vw;
+	width: 68vw;
+	height: 25vw;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .launching .product h2{
-	position: absolute;
+	position: relative;
 	font-size: 16vw;
 	color: #fcba03;
 	font-weight: 800;
 }
 .launching .product img{
-	position: relative;
-	margin-bottom: 50px;
+	position: absolute;
+	margin-bottom: -50px;
 	max-width: 43rem;
 	transform: rotate(-10deg);
-	-webkit-filter: drop-shadow(0px 5px 20px rgba(32, 31, 31, 0.5));
+	-webkit-filter: drop-shadow(0px 5px 20px rgba(0,0,0,0.5));
 }
 .launching .product p{
 	position: absolute;
@@ -664,7 +662,7 @@ nav ul li img{
 .seputar{
 	position: relative;
 	padding: 50px 0px;
-	background: url(img/background.png);
+	background: url(img/background-3.png);
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -704,7 +702,7 @@ nav ul li img{
 	content: '';
 	position: absolute;
 	top: -1px;
-	background: rgb(255, 255, 255);
+	background: #000;
 	width: 130px;
 	height: 15px;
 	border-radius: 10px 10px 50px 50px;
@@ -719,7 +717,7 @@ nav ul li img{
 	transform: rotate(-90deg);
 	right: 75px;
 	font-size: 4.1em;
-	color: #03fc18;
+	color: #fcba03;
 	/*text-shadow: -30px 0px 20px rgba(0,0,0,0.5);*/
 }
 .seputar .halo .kotak .text2{
@@ -756,7 +754,7 @@ nav ul li img{
 	align-items: center;
 	font-weight: 800;
 	padding: 3px 10px;
-	background: #ffffff;
+	background: #fcba03;
 	border-radius: 5px;
 	color: #000;
 	text-shadow: 1px 1px 0px rgba(255,255,255,0.3);
@@ -1387,7 +1385,7 @@ nav ul li img{
 	height: 150px;
 	transform: scale(0.7);
 	border-radius: 50%;
-	background: url(img/background-5.png);
+	background: url(img/background.png);
 	background-position: center;
 	background-size: cover;
 	transition: 1s;
