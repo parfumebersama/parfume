@@ -286,6 +286,7 @@ nav ul li img{
 @media screen and (max-width: 576px){
 	.jumbotron h2{
 		font-size: 5em;
+		text-align: center;
 	}
 	.jumbotron .content-2{
 		position: relative;
@@ -301,7 +302,7 @@ nav ul li img{
 		height: 500px;
 	}
 	.jumbotron img.logo{
-		max-width: 10rem;
+		max-width: 16rem;
 	}
 }
 
