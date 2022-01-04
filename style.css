@@ -344,7 +344,7 @@ nav ul li img{
 	text-align: right;
 	font-weight: 800;
 	color: #fff;
-	font-size: 3em;
+	font-size: 5em;
 	z-index: 5;
 }
 .launching .aboutUs .row h1 span{
@@ -604,8 +604,8 @@ nav ul li img{
 }
 .launching .product h2{
 	position: relative;
-	font-size: 12vw;
-	color: #fcba03;
+	font-size: 15vw;
+	color: #ffd000;
 	font-weight: 800;
 }
 .launching .product img{
@@ -617,7 +617,7 @@ nav ul li img{
 }
 .launching .product p{
 	position: absolute;
-	font-size: 2.5vw;
+	font-size: 2.7vw;
 	font-weight: 800;
 }
 .launching .product .text1{
